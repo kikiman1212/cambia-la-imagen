@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/K.png">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Cambio de Imagen</title>
+</head>
+<body>
+
+    <div class="contenedor">
+
+    <h2>Bienvenidos</h2>
+    <p id="demostracion">Este texto sera cambiado por ti con JS</p>
+</div>
+
+<div class="main">
+	
+    <input id="tuNombre" type="Text" name="name" required  placeholder="Ingresa tu Nombre" autofucus>
+    <br>
+    <input id="tuEdad" type="number" maxlength="2" placeholder="Introduce tu edad" required>
+    <br>
+      <select id="tuSexo">
+      <option >Femenino</option>
+      <option >Masculino</option>
+      
+    </select>
+    <button onclick="cambiarTexto()">Cambiar el texto</button>
+   
+    <button onclick="cambiarImagen()">Enviar</button>
+  
+</div>
+<div class="caja">
+<iframe width="650" height="315" src="https://www.youtube.com/embed/ZtD9bQIjE_k?si=qS3nUw9r5wjIvsAq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<img class="kikoimg" id="imgCambia" src="img/paisaje.jpeg" alt="Imagen Cambiante">
+
+<footer><h3>©kiko Ramirez||2023</h3>
+  <img src="img/K.png">
+  <a href="https://open.spotify.com/playlist/3o62TCAuREsoYxvE8VwiOj?si=0fc2175c3f8e43f6" target="_blank"><img src="img/spo2.png"></a>
+  <a href="https://www.tiktok.com/@kikiman1212" target="_blank"><img src="img/tik.png"></a>
+  <img src="img/wat.png">
+<a href="https://youtu.be/jvLTTSJm6BM" target="_blank"><img src="img/YOU.png"></a></footer>
+
+
+    <script src="min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body{
+    background: black;
+    color: #fff; 
+}
+
+.contenedor{
+    font-family: sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 99;
+    margin: 5px 10px;
+}
+.main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+
+}
+
+input{
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    color: blue;
+    font-family: fantasy;
+    font-size: 20px;
+    opacity: .3;
+}
+input:hover{
+   cursor: pointer;
+   width: 230px;
+
+}
+button{
+    margin: 5px;
+    width: 150px;
+    height: 25px;
+    border-radius:5px;
+    color: blue;
+font-size:20px;
+    font-family: fantasy;
+    font-weight: bold;
+    opacity: .3;
+}
+
+select{
+    margin: 5px;
+    width: 150px;
+    height: 30px;
+    border-radius:5px;
+    color: blue;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: .3;
+
+
+}
+button:hover{
+   cursor: pointer;
+   width: 180px;
+   color: red;
+}
+select:hover{
+cursor: pointer;
+   width: 180px;
+   color: red;
+
+}
+
+.kikoimg{
+    width: 100%;
+    height: 107vh;
+    margin-top: -600px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+
+}
+p{font-family: fantasy, serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.caja{
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .3;
+    z-index: 50;
+}
+
+.caja iframe{
+ border-radius: 10px;
+}
+
+footer{
+    display: flex;
+        justify-content:center;
+        align-items: center;
+        background-color: black;
+        padding: 10px 0px;
+        font-size: 30px;
+        margin-block: 10px;  
+}
+  footer img {
+        display: flex;
+        align-items: center;
+        width:30px;
+        margin-left:10px;
+        cursor: pointer;
+    }
+
+@media only screen and (max-width: 500px){
+footer{ 
+	display: flex;
+   	justify-content:center;
+    	align-items: center;
+  
+    	padding: 10px 0px;
+    	font-size: 20px;
+           
+}
+
+footer img {
+   display: flex;
+   align-items: center;
+	width:20px;
+	margin-left:5px;
+   cursor: pointer;
+}
+}
