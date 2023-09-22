@@ -11,26 +11,26 @@ const sexo = document.getElementById('tuSexo');
 
 
 function cambiarTexto (){ 
-document.getElementById('demostracion').innerHTML  = 'Hola ' + Nombre.value + '  🤟🎸 Hoy es ' + fecha.toDateString();
+document.getElementById('demostracion').innerHTML  = 'Hola ' + Nombre.value + '  🤟😎👨‍💻 ' + ' Tienes ' + edad.value + ' años ' + ' Hoy es ' + fecha.toDateString();
 }
 
 function cambiarImagen(){ 
-	if(edad.value < 18 && sexo.value == "Masculino"){
-	document.getElementById('imgCambia').src = img1;
-	}
 	if(edad.value >= 18 && sexo.value == "Masculino"){
 	document.getElementById('imgCambia').src = img5;
 	 }
-	if(edad.value > 4 && sexo.value == "Femenino"){
+	else if(edad.value > 4 && sexo.value == "Femenino"){
 	document.getElementById('imgCambia').src = img6;
 	 }
-        if(edad.value == 8 && sexo.value == "Masculino"){
+        else if(Nombre.value == "ANGEL" && edad.value == 8 && sexo.value == "Masculino"){
 	document.getElementById('imgCambia').src = img3;
-         alert('Hola Gustavo tienes 8 Años');
+         alert('Hola Angel Gustavo tienes 8 Años, y eres cinta verde avanzada 🥋🏆, y te gusta ver Raimo Friends');
 	 }
-	
+	else if(edad.value < 18 && sexo.value == "Masculino"){
+	document.getElementById('imgCambia').src = img1;
+	}else{
+	alert('Introduce tu Nombre, Edad y Sexo');
+}	
 }
-
 
 
 
