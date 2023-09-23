@@ -17,9 +17,11 @@ document.getElementById('demostracion').innerHTML  = 'Hola ' + Nombre.value + ' 
 function cambiarImagen(){ 
 	if(edad.value >= 18 && sexo.value == "Masculino"){
 	document.getElementById('imgCambia').src = img5;
+        Nombre.value = ""; edad.value = "";
 	 }
 	else if(edad.value > 4 && sexo.value == "Femenino"){
 	document.getElementById('imgCambia').src = img6;
+        Nombre.value = ""; edad.value = "";
 	 }
         else if(Nombre.value == "ANGEL" && edad.value == 8 && sexo.value == "Masculino"){
 	document.getElementById('imgCambia').src = img3;
@@ -27,8 +29,9 @@ function cambiarImagen(){
 	 }
 	else if(edad.value < 18 && sexo.value == "Masculino"){
 	document.getElementById('imgCambia').src = img1;
+        Nombre.value = ""; edad.value = "";
 	}else{
-	alert('Introduce tu Nombre, Edad y Sexo');
+	alert('Introduce tu Nombre, Edad y Sexo 😎👨‍💻❌');
 }	
 }
 

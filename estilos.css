@@ -83,7 +83,7 @@ cursor: pointer;
 
 .kikoimg{
     width: 100%;
-    height: 107vh;
+    height: 122vh;
     margin-top: -620px;
     position: relative;
     background-repeat: no-repeat;
@@ -98,6 +98,7 @@ p{font-family: fantasy, serif;
 }
 
 .caja{
+   margin: 40px;
     padding: 10px;
     position: relative;
     display: flex;
