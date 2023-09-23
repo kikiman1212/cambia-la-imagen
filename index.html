@@ -11,11 +11,11 @@
 
     <div class="contenedor">
 
-    <h2>Bienvenidos</h2>
+    <h2>Bienvenido</h2>
     <p id="demostracion">Este texto sera cambiado por ti con JS</p>
 </div>
 
-<div class="main">
+<div class="main" id="esconder">
 	
     <input id="tuNombre" type="Text" name="name" required  placeholder="Ingresa tu Nombre" autofucus>
     <br>
@@ -26,13 +26,17 @@
       <option >Masculino</option>
       
     </select>
-    <button onclick="cambiarTexto()">Cambiar el texto</button>
+    <button onclick="cambiarTexto()" id="texto">Cambiar el texto</button>
    
-    <button onclick="cambiarImagen()">Enviar</button>
+    <button onclick="cambiarImagen()" id="imagen">Enviar</button>
   
 </div>
+
 <div class="caja">
 <iframe width="650" height="315" src="https://www.youtube.com/embed/ZtD9bQIjE_k?si=qS3nUw9r5wjIvsAq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="main">
+<button onclick="regresarCaja()" id="regresar">Regresar</button>
 </div>
 <img class="kikoimg" id="imgCambia" src="img/paisaje.jpeg" alt="Imagen Cambiante">
 
